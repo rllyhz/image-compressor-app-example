@@ -145,6 +145,8 @@ class MainActivity : AppCompatActivity() {
                 Manifest.permission.READ_EXTERNAL_STORAGE
             ) != PackageManager.PERMISSION_GRANTED
         ) {
+            // request all permission need, just for demo
+            // but in production, it should handle every single permission
             ActivityCompat.requestPermissions(
                 this,
                 arrayOf(
@@ -155,13 +157,5 @@ class MainActivity : AppCompatActivity() {
                 101
             )
         }
-    }
-
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        return super.onRequestPermissionsResult(requestCode, permissions, grantResults)
     }
 }
