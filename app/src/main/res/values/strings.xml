@@ -1,0 +1,6 @@
+<resources>
+   <string name="app_name">Image Compressor App</string>
+
+   <string name="temp_image_name">temp_image.jpeg</string>
+   <string name="authorities">id.rllyhz.imagecompressorapp.provider</string>
+</resources>

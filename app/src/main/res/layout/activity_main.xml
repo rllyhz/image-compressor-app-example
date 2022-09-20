@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:padding="24dp"
+   tools:context=".MainActivity">
+
+   <ImageView
+      android:id="@+id/iv_image_preview"
+      android:layout_width="280dp"
+      android:layout_height="280dp"
+      android:background="@color/purple_200"
+      android:contentDescription=""
+      app:layout_constraintBottom_toTopOf="@+id/btn_open_camera"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+   <Button
+      android:id="@+id/btn_open_album"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Album"
+      android:textAllCaps="false"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/iv_image_preview" />
+
+   <Button
+      android:id="@+id/btn_open_camera"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Camera"
+      android:textAllCaps="false"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/iv_image_preview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
